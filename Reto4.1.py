@@ -1,10 +1,13 @@
 import random
-saldo = 1000  
-    
+saldoinicial = 1000  
+jugador = input("Ingrese el nombre del jugador:  ")   
 def lanzarMoneda():
-    jugador = input("Ingresa el nombre del jugador: ")
-    resultado = random.choice(["cara", "sello"])
+    moneda=["cara", "sello"]
+    resultado = random.choice(moneda)
     return resultado
 
-    
-    
+def ganar():
+    global saldoinicial
+    saldoinicial = saldoinicial + 1000
+    print("Has ganado")
+
