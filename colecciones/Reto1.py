@@ -44,10 +44,10 @@ while True:
             print("El índice ingresado es inválido.")
     elif opcion == "5":
        
-        nombre = input("Ingrese el nombre del instructor a buscar: ").lower()
+        nombre = input("Ingrese el nombre del instructor a buscar: ")
         encontrado = False
         for instructor in instructores:
-            if instructor.lower() == nombre:
+            if instructor == nombre:
                 print("El instructor", instructor, "fue encontrado.")
                 encontrado = True
                 break
